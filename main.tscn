@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd8mh53e5kuir"]
+
+[ext_resource type="Script" uid="uid://p8v57ofkyhb" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://b6d37gfvtvkxh" path="res://camera_orbit.gd" id="2_0xm2m"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15)
+current = true
+script = ExtResource("2_0xm2m")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="TorusContainer" type="Node3D" parent="."]
